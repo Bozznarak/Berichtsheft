@@ -1,0 +1,1 @@
+Nachweisnummer;0Name,Vorname;Otto, ChristianWoche/Jahr;0/0000WocheMontag;WeekStartWocheSontag;WeekEndKlasse;IT 32.VCAusbildung;Fachinformatiker AEMo;;;;Di;;;;Mi;;;;Do;;;;Fr;;;;
