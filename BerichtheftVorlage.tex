@@ -1,0 +1,127 @@
+\documentclass[10.5pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{{img/}}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{textcomp}
+\usepackage[official]{eurosym}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{dcolumn}
+\usepackage{tabu}
+\usepackage{makecell}
+\usepackage{array,multirow,graphicx}
+\usepackage{float}
+\usepackage{soul}
+\usepackage{ulem}
+\usepackage{booktabs}
+\soulregister{\hfill}{0}
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+
+
+\geometry{
+	a4paper,
+	top=15mm,
+	right=22mm,
+	bottom=10mm,
+	left=25mm,
+}
+\begin{document}	
+\begin{table}[h!]
+	\begin{tabular}{p{2.5cm}p{4cm}p{3cm}p{5cm}}
+		\textbf{{\large Ausbildungsnachweis}} & &&\\
+		\\ \\ \\
+		Nachweisnr.& logEntryNumber &Name, Vorname& firstNameLastName \\
+		\cline{2-2} \cline{4-4} \\
+		Woche/Jahr & weekYear & Woche& \begin{tabular}{p{0.5cm}p{1.2cm} p{0.5cm}p{1.2cm}}
+			vom& wStart &bis& wEnd
+			\\
+			\cline{2-2} \cline{4-4}
+		\end{tabular} \\
+		\cline{2-2}\\
+		Klasse & className & Ausbildung & educationGoal \\
+		\cline{2-2} \cline{4-4} \\
+	\end{tabular}
+	%\caption{Grobe Zeitplanung}
+\end{table}
+
+\begin{table}[h!]
+	\begin{tabular}{| M{1.0cm} | p{11.0cm} | M{3.0cm} |} 
+		\hline
+		&&\\[-2ex]
+		\textbf{Tag} & \textbf{Ausgeführte Arbeiten, Unterricht usw.} & \textbf{Einzelstunden}\rule{0pt}{2ex}\\
+		\hline
+		\multirow{5}{*}{\rotatebox[origin=c]{90}{\parbox[c]{1cm}{\centering Montag}}}  &&\\
+		& MetaMo1 &\\
+		& MetaMo2 & timeMon \\
+		& MetaMo3 &\\
+		& MetaMo4 &\\
+		\hline
+		\multirow{6}{*}{\rotatebox[origin=c]{90}{\parbox[c]{1cm}{\centering Dienstag}}}  &&\\
+		& MetaTu1 &\\
+		& MetaTu2 & timeTue \\
+		& MetaTu3 &\\
+		& MetaTu4 &\\
+		\hline
+		\multirow{6}{*}{\rotatebox[origin=c]{90}{\parbox[c]{1cm}{\centering Mittwoch}}}  &&\\
+		& MetaWe1 &\\
+		& MetaWe2 & timeWed \\
+		& MetaWe3 &\\
+		& MetaWe4 &\\
+		\hline
+		\multirow{7}{*}{\rotatebox[origin=c]{90}{\parbox[c]{1cm}{\centering Donnerstag}}}  &&\\
+		& MetaTh1 &\\
+		& MetaTh2 & timeThu \\
+		& MetaTh3 &\\
+		& MetaTh4 &\\
+		\hline
+		\multirow{5}{*}{\rotatebox[origin=c]{90}{\parbox[c]{1cm}{\centering Freitag}}}  &&\\
+		& MetaFr1 &\\
+		& MetaFr2 & timeFri \\
+		& MetaFr3 &\\
+		& MetaFr4 &\\
+		\hline
+		\multirow{6}{*}{\rotatebox[origin=c]{90}{\parbox[c]{1cm}{\centering Samstag}}}  &&\\
+		&&\\
+		&& \\
+		&&\\
+		&&\\
+		\hline
+		\multirow{6}{*}{\rotatebox[origin=c]{90}{\parbox[c]{1cm}{\centering Sonntag}}}  &&\\
+		&&\\
+		&&\\
+		&&\\
+		&&\\
+		\hline
+		\multicolumn{2}{r|}{\textbf{}} & \\
+		\multicolumn{2}{r|}{\textbf{}} & timeTotal 
+		\\
+		\multicolumn{2}{r|}{\textbf{Gesamtstunden}} & \\
+		\cline{3-3}
+	\end{tabular}
+	%\caption{Grobe Zeitplanung}
+\end{table}
+\begin{table}[h!]
+	\begin{tabular}{| p{7.7cm} |p{7.7cm} |}
+		\hline	
+		Bemerkungen Auszubildender&Bemerkungen Ausbilder \rule{0pt}{2ex}\\
+		%&\\[-1ex]
+		&\\
+		&\\
+		\hline
+
+		\includegraphics[height=36px, width=220px]{Signature220x36.png}&\\ % 220x 36 px sollte die SignaturPNG sein
+
+		Unterschrift Auszubildender&Unterschrift Ausbilder\\
+		\hline
+		&\\
+		Datum \hspace{1.5cm} &Datum\\
+		\hline
+	\end{tabular}
+\end{table}
+\end{document}
